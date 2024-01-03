@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for patient in Patients %}
+    <div>
+        <p>{{patient.id}}</p>
+        <p>{{patient.firstName}}</p>
+        <p>{{patient.doj}}</p>
+        <p>{{patient.gender}}</p>
+        <p>{{patient.mobileNo}}</p>
+        <p>{{patient.domain}}</p>
+        <p>{{patient.company}}</p>
+        <p>{{patient.salary}}</p>
+    </div>
+    {% endfor %}
+
+</body>
+</html>

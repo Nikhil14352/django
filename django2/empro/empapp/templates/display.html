@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for employee in employes %}
+    <div>
+        <p>{{employee.id}}</p>
+        <p>{{employee.firstName}}</p>
+        <p>{{employee.lastName}}</p>
+        <p>{{employee.email}}</p>
+        <p>{{employee.dob}}</p>
+        <p>{{employee.gender}}</p>
+        <p>{{employee.mobileNo}}</p>
+        <p>{{employee.domain}}</p>
+        <p>{{employee.company}}</p>
+        <p>{{employee.salary}}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

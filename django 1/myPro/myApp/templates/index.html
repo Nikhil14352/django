@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="branch">branch:</label><br>
+        <input type="text" id="branch" name="branch"><br>
+
+        <label for="college">college</label><br>
+        <input type="text" id="college" name="college"><br>
+
+        <label for="grade">grade</label><br>
+        <input type="text" id="grade" name="grade"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- {% for boys in stu %}
+
+    <div>
+        <p>
+            {{boys.id}}
+        </p>
+        <p>{{boys.name}}</p>
+        <p>{{boys.branch}}</p>
+        <p>{{boys.college}}</p>
+        <p>{{boys.grade}}</p>
+    </div>
+    {% endfor %} -->
+</body>
+</html>
